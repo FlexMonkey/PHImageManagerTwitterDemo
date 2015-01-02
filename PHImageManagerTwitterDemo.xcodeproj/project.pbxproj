@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		BE9219B41A53BEFB00B545A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9219B31A53BEFB00B545A0 /* AppDelegate.swift */; };
-		BE9219B71A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE9219B51A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */; };
 		BE9219B91A53BEFB00B545A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9219B81A53BEFB00B545A0 /* ViewController.swift */; };
 		BE9219BC1A53BEFB00B545A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9219BA1A53BEFB00B545A0 /* Main.storyboard */; };
 		BE9219BE1A53BEFB00B545A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9219BD1A53BEFB00B545A0 /* Images.xcassets */; };
 		BE9219C11A53BEFB00B545A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE9219BF1A53BEFB00B545A0 /* LaunchScreen.xib */; };
 		BE9219CD1A53BEFC00B545A0 /* PHImageManagerTwitterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9219CC1A53BEFC00B545A0 /* PHImageManagerTwitterDemoTests.swift */; };
+		BE9219D81A53C34B00B545A0 /* ImageItemRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9219D71A53C34B00B545A0 /* ImageItemRenderer.swift */; };
+		BE921A111A567CF500B545A0 /* TweetablePhotosBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE921A101A567CF500B545A0 /* TweetablePhotosBrowser.swift */; };
+		BE921A151A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE921A131A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */; };
+		BE921A171A5682BC00B545A0 /* TweetedPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE921A161A5682BC00B545A0 /* TweetedPhotos.swift */; };
+		BE921A191A5683ED00B545A0 /* CoreDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE921A181A5683ED00B545A0 /* CoreDataDelegate.swift */; };
+		BE921A1B1A56881F00B545A0 /* TweetedPhotosBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE921A1A1A56881F00B545A0 /* TweetedPhotosBrowser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +35,6 @@
 		BE9219AE1A53BEFB00B545A0 /* PHImageManagerTwitterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHImageManagerTwitterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9219B21A53BEFB00B545A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9219B31A53BEFB00B545A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE9219B61A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PHImageManagerTwitterDemo.xcdatamodel; sourceTree = "<group>"; };
 		BE9219B81A53BEFB00B545A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE9219BB1A53BEFB00B545A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE9219BD1A53BEFB00B545A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +42,12 @@
 		BE9219C61A53BEFC00B545A0 /* PHImageManagerTwitterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHImageManagerTwitterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9219CB1A53BEFC00B545A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE9219CC1A53BEFC00B545A0 /* PHImageManagerTwitterDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHImageManagerTwitterDemoTests.swift; sourceTree = "<group>"; };
+		BE9219D71A53C34B00B545A0 /* ImageItemRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItemRenderer.swift; sourceTree = "<group>"; };
+		BE921A101A567CF500B545A0 /* TweetablePhotosBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetablePhotosBrowser.swift; sourceTree = "<group>"; };
+		BE921A141A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PHImageManagerTwitterDemo.xcdatamodel; sourceTree = "<group>"; };
+		BE921A161A5682BC00B545A0 /* TweetedPhotos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetedPhotos.swift; path = ../TweetedPhotos.swift; sourceTree = "<group>"; };
+		BE921A181A5683ED00B545A0 /* CoreDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDelegate.swift; sourceTree = "<group>"; };
+		BE921A1A1A56881F00B545A0 /* TweetedPhotosBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetedPhotosBrowser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +89,14 @@
 		BE9219B01A53BEFB00B545A0 /* PHImageManagerTwitterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE921A121A56821800B545A0 /* coreData */,
+				BE921A0F1A567CBF00B545A0 /* widgets */,
+				BE9219D61A53C31B00B545A0 /* renderers */,
 				BE9219B31A53BEFB00B545A0 /* AppDelegate.swift */,
 				BE9219B81A53BEFB00B545A0 /* ViewController.swift */,
 				BE9219BA1A53BEFB00B545A0 /* Main.storyboard */,
 				BE9219BD1A53BEFB00B545A0 /* Images.xcassets */,
 				BE9219BF1A53BEFB00B545A0 /* LaunchScreen.xib */,
-				BE9219B51A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */,
 				BE9219B11A53BEFB00B545A0 /* Supporting Files */,
 			);
 			path = PHImageManagerTwitterDemo;
@@ -113,6 +125,33 @@
 				BE9219CB1A53BEFC00B545A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE9219D61A53C31B00B545A0 /* renderers */ = {
+			isa = PBXGroup;
+			children = (
+				BE9219D71A53C34B00B545A0 /* ImageItemRenderer.swift */,
+			);
+			name = renderers;
+			sourceTree = "<group>";
+		};
+		BE921A0F1A567CBF00B545A0 /* widgets */ = {
+			isa = PBXGroup;
+			children = (
+				BE921A101A567CF500B545A0 /* TweetablePhotosBrowser.swift */,
+				BE921A1A1A56881F00B545A0 /* TweetedPhotosBrowser.swift */,
+			);
+			name = widgets;
+			sourceTree = "<group>";
+		};
+		BE921A121A56821800B545A0 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				BE921A161A5682BC00B545A0 /* TweetedPhotos.swift */,
+				BE921A131A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */,
+				BE921A181A5683ED00B545A0 /* CoreDataDelegate.swift */,
+			);
+			name = coreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE921A1B1A56881F00B545A0 /* TweetedPhotosBrowser.swift in Sources */,
 				BE9219B91A53BEFB00B545A0 /* ViewController.swift in Sources */,
-				BE9219B71A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld in Sources */,
+				BE921A111A567CF500B545A0 /* TweetablePhotosBrowser.swift in Sources */,
+				BE921A151A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld in Sources */,
 				BE9219B41A53BEFB00B545A0 /* AppDelegate.swift in Sources */,
+				BE9219D81A53C34B00B545A0 /* ImageItemRenderer.swift in Sources */,
+				BE921A191A5683ED00B545A0 /* CoreDataDelegate.swift in Sources */,
+				BE921A171A5682BC00B545A0 /* TweetedPhotos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +467,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BE9219B51A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */ = {
+		BE921A131A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BE9219B61A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */,
+				BE921A141A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */,
 			);
-			currentVersion = BE9219B61A53BEFB00B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */;
+			currentVersion = BE921A141A56825000B545A0 /* PHImageManagerTwitterDemo.xcdatamodel */;
 			path = PHImageManagerTwitterDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

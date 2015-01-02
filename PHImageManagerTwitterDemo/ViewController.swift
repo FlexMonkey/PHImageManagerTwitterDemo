@@ -8,18 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    let tweetabePhotosBrowser = TweetablePhotosBrowser(frame: CGRectZero)
+    let tweetedPhotosBrowser = TweetedPhotosBrowser(frame: CGRectZero)
+    
+    let coreDataDelegate = CoreDataDelegate()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        tweetabePhotosBrowser.coreDataDelegate = coreDataDelegate
+        tweetedPhotosBrowser.coreDataDelegate = coreDataDelegate
+        
+        tweetabePhotosBrowser.addTarget(self, action: "tweetabePhotosBrowserChange", forControlEvents: UIControlEvents.ValueChanged)
+        
+        view.addSubview(tweetabePhotosBrowser)
+        view.addSubview(tweetedPhotosBrowser)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tweetabePhotosBrowserChange()
+    {
+        tweetedPhotosBrowser.refresh()
     }
-
+    
+    override func viewDidLayoutSubviews()
+    {
+        tweetabePhotosBrowser.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height / 2.0).rectByInsetting(dx: 10, dy: 20)
+        
+        tweetedPhotosBrowser.frame = CGRect(x: 0, y: view.frame.height / 2.0, width: view.frame.width, height: view.frame.height / 2.0).rectByInsetting(dx: 10, dy: 20)
+    }
 
 }
 
